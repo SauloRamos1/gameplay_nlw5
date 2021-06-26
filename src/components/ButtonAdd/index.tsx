@@ -7,7 +7,7 @@ import { theme } from "../../global/styles/themes";
 
 export function ButtonAdd({ ...rest }: RectButtonProps) {
     return (
-        <RectButton style={styles.container}>
+        <RectButton {...rest} style={styles.container}>
             <MaterialCommunityIcons name="plus" color={theme.colors.heading} size={24} />
 
         </RectButton>
