@@ -4,7 +4,7 @@ import { NavigationContainer } from '@react-navigation/native';
 import { useAuth } from '../hooks/auth';
 
 import { SignIn } from '../screens/SignIn';
-import { AuthRoutes } from './auth.routes';
+import { AppRouts } from './app.routes';
 
 
 export function Routes() {
@@ -13,7 +13,7 @@ export function Routes() {
     return (
         <NavigationContainer>
 
-            {user.id ? <AuthRoutes /> : <SignIn />}
+            {user.id ? <AppRouts /> : <SignIn />}
 
         </NavigationContainer>
     )
